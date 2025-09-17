@@ -1,5 +1,6 @@
 {% set name = "sphinx-prompt" %}
-{% set version = "1.4.0" %}
+{% set version = "1.10.1" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +8,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 70c8e66d1f36def1e295ed961c7562bbf8fc697eea5191b92b41e4784c264ef5
+  sha256: 2b8a18433ee3d9f2a7c4e51a768fb14c5177cce4bf0e2298ecc068a0ca9918bf
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
