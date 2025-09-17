@@ -18,6 +18,8 @@ build:
 requirements:
   host:
     - pip
+    - poetry-core >=1.0.0
+    - poetry-dynamic-versioning
     - python {{ python_min }}
   run:
     - python >={{ python_min }}
