@@ -7,7 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  # https://files.pythonhosted.org/packages/6c/1b/ceb8d295275982121eefc8a4f0b71edf7f26c16f5bc53f4204527f173783/sphinx_prompt-1.10.1.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name.replace("-", "_") }}/{{ name.replace("-", "_") }}-{{ version }}.tar.gz
   sha256: 2b8a18433ee3d9f2a7c4e51a768fb14c5177cce4bf0e2298ecc068a0ca9918bf
 
 build:
